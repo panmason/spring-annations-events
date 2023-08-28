@@ -15,3 +15,29 @@
 ### 1.3 使用`@import`导入Spring组件
 
 ### 1.4 使用`FactoryBean`进行装配
+
+### 1.5 使用`Conditional`进行条件加载
+
+## 2.Bean的生命周期
+
+### 2.1 指定初始化与销毁方法
+
+### 2.2 `PostConstruct`与`PreDestory`
+
+### 2.3 `InitializingBean`与`DisposableBean`
+
+### 2.4 后置处理器`BeanPostProcessor`原理与应用
+
+
+## 3.自动装配
+
+### 3.1 属性赋值与外部文件加载
+
+### 3.2 依赖注入`@Autowired`与`@Resource`与`@Inject`
+
+### 3.3 自动装配指定选择`@Qualifier`与`@Primary`
+
+### 3.4 依据`Profile`环境区分装配
+
+
+## 4.Spring的事件驱动
