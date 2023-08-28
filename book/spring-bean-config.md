@@ -1,0 +1,1 @@
+# Spring中bean的装配方式
