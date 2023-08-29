@@ -17,11 +17,17 @@
 [自动包扫描简介与样例](book/spring-component-scan.md)
 
 
-### 1.3 使用`@import`导入Spring组件
+### 1.3 使用`@Import`导入Spring组件
 
-### 1.4 使用`FactoryBean`进行装配
+在Spring容器中对于Bean的装配除了使用Bean注解，自动扫描等可以使用`@Import`直接将某个class添加到spring的容器中，对于使用`@Import`时可以配合`ImportSelector`使用，来达到类似过滤器的效果。
 
-### 1.5 使用`Conditional`进行条件加载
+[Import使用介绍与样例](book/spring-imports.md)
+
+### 1.4 使用`Conditional`进行条件加载
+
+
+
+### 1.5 使用`FactoryBean`进行装配
 
 ## 2.Bean的生命周期
 
