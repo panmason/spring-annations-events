@@ -31,6 +31,10 @@
 
 ### 1.5 使用`FactoryBean`进行装配
 
+Bean除了上面装配手段，还可以使用`FactoryBean`进行装配
+
+[FactoryBean介绍与样例.md](book%2Fspring-factory-bean.md)
+
 ## 2.Bean的生命周期
 
 ### 2.1 指定初始化与销毁方法

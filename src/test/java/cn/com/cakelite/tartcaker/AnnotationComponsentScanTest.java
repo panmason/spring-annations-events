@@ -16,4 +16,14 @@ public class AnnotationComponsentScanTest {
         }
     }
 
+
+    @Test
+    void factoryBeanTest() {
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ComponentScanConfiguration.class);
+        Object colorFactoryBean = applicationContext.getBean("colorFactoryBean");
+        System.out.println(colorFactoryBean.getClass());
+
+        Object colorFactoryBean1 = applicationContext.getBean("&colorFactoryBean");
+        System.out.println(colorFactoryBean1.getClass());
+    }
 }

@@ -3,6 +3,7 @@ package cn.com.cakelite.tartcaker.config;
 import cn.com.cakelite.tartcaker.colors.Blue;
 import cn.com.cakelite.tartcaker.colors.Red;
 import cn.com.cakelite.tartcaker.condition.CustomCondition;
+import cn.com.cakelite.tartcaker.factory.ColorFactoryBean;
 import cn.com.cakelite.tartcaker.filter.CustomFilter;
 import cn.com.cakelite.tartcaker.selector.CustomSelector;
 import org.springframework.context.annotation.*;
@@ -20,6 +21,11 @@ public class ComponentScanConfiguration {
     @Bean
     public Red red() {
         return new Red();
+    }
+
+    @Bean
+    public ColorFactoryBean colorFactoryBean() {
+        return new ColorFactoryBean();
     }
 
 }
