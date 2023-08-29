@@ -25,7 +25,9 @@
 
 ### 1.4 使用`Conditional`进行条件加载
 
+在很多情况下我们需要根据目前容器内的一些配置或一些环境配置来选择加载一些Bean到Spring容器中，这是时候需要使用`Conditional`进行条件加载。
 
+[Conditional条件加载Bean介绍与样例](book/spring-conditional.md)
 
 ### 1.5 使用`FactoryBean`进行装配
 

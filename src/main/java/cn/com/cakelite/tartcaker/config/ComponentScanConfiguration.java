@@ -1,12 +1,11 @@
 package cn.com.cakelite.tartcaker.config;
 
 import cn.com.cakelite.tartcaker.colors.Blue;
+import cn.com.cakelite.tartcaker.colors.Red;
+import cn.com.cakelite.tartcaker.condition.CustomCondition;
 import cn.com.cakelite.tartcaker.filter.CustomFilter;
 import cn.com.cakelite.tartcaker.selector.CustomSelector;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.FilterType;
-import org.springframework.context.annotation.Import;
+import org.springframework.context.annotation.*;
 
 @Configuration
 @ComponentScan(basePackages = "cn.com.cakelite.tartcaker",
@@ -16,4 +15,11 @@ import org.springframework.context.annotation.Import;
         })
 @Import({Blue.class, CustomSelector.class})
 public class ComponentScanConfiguration {
+
+    @Conditional(CustomCondition.class)
+    @Bean
+    public Red red() {
+        return new Red();
+    }
+
 }
