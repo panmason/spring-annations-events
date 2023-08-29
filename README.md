@@ -12,6 +12,11 @@
 
 ### 1.2 使用`@ComponentScan`扫描包进行装配
 
+在日常开发中，大多会使用`@Controller`,`@Service`,`@Repository`等注解来标记对应的业务代码中的Bean，此时使用Spring中的自动扫描功能，下面介绍对应扫描方式来自动装配Bean的配置
+
+[自动包扫描简介与样例](book/spring-component-scan.md)
+
+
 ### 1.3 使用`@import`导入Spring组件
 
 ### 1.4 使用`FactoryBean`进行装配
