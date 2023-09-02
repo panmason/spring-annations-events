@@ -17,6 +17,8 @@ import org.springframework.context.annotation.*;
 @Import({Blue.class, CustomSelector.class})
 public class ComponentScanConfiguration {
 
+
+
     @Conditional(CustomCondition.class)
     @Bean
     public Red red() {
