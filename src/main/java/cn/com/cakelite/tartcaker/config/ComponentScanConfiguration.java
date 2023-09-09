@@ -1,6 +1,7 @@
 package cn.com.cakelite.tartcaker.config;
 
 import cn.com.cakelite.tartcaker.colors.Blue;
+import cn.com.cakelite.tartcaker.colors.Color;
 import cn.com.cakelite.tartcaker.colors.Red;
 import cn.com.cakelite.tartcaker.condition.CustomCondition;
 import cn.com.cakelite.tartcaker.factory.ColorFactoryBean;
@@ -25,9 +26,14 @@ public class ComponentScanConfiguration {
         return new Red();
     }
 
-    @Bean
-    public ColorFactoryBean colorFactoryBean() {
-        return new ColorFactoryBean();
+//    @Bean
+//    public ColorFactoryBean colorFactoryBean() {
+//        return new ColorFactoryBean();
+//    }
+
+    @Bean(initMethod = "init", destroyMethod = "destroy")
+    public Color color() {
+        return new Color();
     }
 
 }

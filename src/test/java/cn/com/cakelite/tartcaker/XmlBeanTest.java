@@ -9,14 +9,15 @@ public class XmlBeanTest {
 
     @Test
     void xmlConfigBeanTest() {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
+        ClassPathXmlApplicationContext applicationContext = new ClassPathXmlApplicationContext("beans.xml");
         String[] beanDefinitionNames = applicationContext.getBeanDefinitionNames();
-        for (String name : beanDefinitionNames) {
-            System.out.println(name);
-        }
+//        for (String name : beanDefinitionNames) {
+//            System.out.println(name);
+//        }
 
-        Person person = (Person) applicationContext.getBean("person");
-        System.out.println(person);
+//        Person person = (Person) applicationContext.getBean("person");
+//        System.out.println(person);
+        applicationContext.close();
 
     }
 

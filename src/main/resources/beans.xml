@@ -9,4 +9,6 @@
         <property name="age" value="21" />
     </bean>
 
+    <bean id="color" class="cn.com.cakelite.tartcaker.colors.Color" init-method="init" destroy-method="destroy"/>
+
 </beans>

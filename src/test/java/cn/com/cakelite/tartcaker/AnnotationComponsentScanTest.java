@@ -9,11 +9,12 @@ public class AnnotationComponsentScanTest {
 
     @Test
     void annotationComponentScanTest() {
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(ComponentScanConfiguration.class);
+        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(ComponentScanConfiguration.class);
         String[] beanDefinitionNames = applicationContext.getBeanDefinitionNames();
-        for (String name : beanDefinitionNames) {
-            System.out.println(name);
-        }
+//        for (String name : beanDefinitionNames) {
+//            System.out.println(name);
+//        }
+        applicationContext.close();
     }
 
 
