@@ -12,4 +12,7 @@ public class CustomCondition implements Condition {
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
         return Objects.requireNonNull(context.getBeanFactory()).containsBean("cn.com.cakelite.tartcaker.colors.Blue");
     }
+
+
+
 }
